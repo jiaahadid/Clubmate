@@ -46,7 +46,7 @@ else{
 
 mysqli_query($conn,
 "INSERT INTO clubs
-(ClubName,Category,Description,Slots)
+(ClubName,Category,Description,Availability)
 VALUES
 ('$name','$cat','$desc','$slots')");
 

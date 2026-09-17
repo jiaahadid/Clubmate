@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         // Check if the club is full
-        else if($club['Slots'] <= 0){
+        else if($club['Availability'] <= 0){
 
             $error = "This club is already full.";
 

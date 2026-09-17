@@ -68,7 +68,7 @@ while($c=mysqli_fetch_assoc($result)){
 
 <td><?=$c['Description']?></td>
 
-<td><?=$c['Slots']?></td>
+<td><?=$c['Availability']?></td>
 
 <td>
 

@@ -52,7 +52,7 @@ if(isset($_POST['update'])){
         ClubName='$name',
         Category='$category',
         Description='$description',
-        Slots='$slots'
+        Availability='$slots'
 
         WHERE ClubID='$id'");
 
@@ -119,7 +119,7 @@ required><?=$club['Description']?></textarea>
 type="number"
 name="slots"
 class="form-control mb-3"
-value="<?=$club['Slots']?>"
+value="<?=$club['Availability']?>"
 min="0"
 required>
 

@@ -48,8 +48,8 @@ $hasApproved = mysqli_num_rows($approved) > 0;
                     <h6 class="fw-bold"><?php echo htmlspecialchars($club['ClubName']); ?></h6>
                     <p class="text-muted mb-1" style="font-size:13px"><?php echo htmlspecialchars($club['Category']); ?></p>
                     <p style="font-size:13px"><?php echo htmlspecialchars($club['Description']); ?></p>
-                    <span class="badge <?php echo $club['Slots'] > 0 ? 'bg-success' : 'bg-danger'; ?>">
-                        <?php echo $club['Slots'] > 0 ? (int)$club['Slots'].' slots left' : 'Full'; ?>
+                    <span class="badge <?php echo $club['Availability'] > 0 ? 'bg-success' : 'bg-danger'; ?>">
+                        <?php echo $club['Availability'] > 0 ? (int)$club['Availability'].' slots left' : 'Full'; ?>
                     </span>
                 </div>
                 <div class="card-footer bg-white border-0">
@@ -76,7 +76,7 @@ elseif($hasApproved){
     </button>";
 
 }
-elseif($club['Slots']<=0){
+elseif($club['Availability']<=0){
 
     echo "<button class='btn btn-secondary btn-sm' disabled>
     Full

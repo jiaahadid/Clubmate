@@ -58,9 +58,9 @@ AND ClubID='$club_id'");
 
 mysqli_query($conn,
 "UPDATE clubs
-SET Slots = Slots - 1
+SET Availability = Availability - 1
 WHERE ClubID='$club_id'
-AND Slots > 0");
+AND Availability > 0");
 
 
 
